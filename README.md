@@ -2,7 +2,7 @@
 
 A stunning, interactive portfolio website featuring a dynamic night sky background with shooting stars, smooth animations, and a modern dark/light mode toggle.
 
-![Portfolio Preview](screenshot.png)
+![Portfolio Preview](Screenshot.png)
 <!-- Add a screenshot of your portfolio later -->
 
 ## 🌐 Live Demo

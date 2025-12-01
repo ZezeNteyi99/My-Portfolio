@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Khanyisa Zezethu Nteyi — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- canvas for the night-sky background -->
+  <canvas id="sky-canvas"></canvas>
+
+  <!-- UI content -->
+  <nav class="navbar">
+    <div class="logo">Portfolio👩‍💼💻</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">ℹ️ About</a></li>
+      <li><a href="#resume">📄 Resume</a></li>
+      <li><a href="#projects">💡 Projects</a></li>
+      <li><a href="#skills">🧠 Skills</a></li>
+      <li><a href="#achievements">🏆 Achievements</a></li>
+      <li><a href="#contact">📧Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <!-- Sections -->
+  <header id="about" class="section hero">
+    <div class="intro">
+      <h1>Hello, I'm <span class="accent" id="typedText"></span><span class="typing-cursor"></span></h1>
+      <p class="lead">
+        A passionate tech enthusiast eager to learn, grow, and build meaningful projects that create real impact.
+      </p>
+      <a class="btn" href="#contact">Contact Me</a>
+
+      <div class="profile-photo">
+        <img src="profile.jpg" alt="Zezethu Nteyi">
+      </div>
+    </div>
+  </header>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <div class="resume-content">
+      <div class="resume-item">
+        <p><strong>Education:</strong> National Diploma in Informational Technology majored in Software Development</p>
+      </div>
+      <div class="resume-item">
+        <p><strong>Email:</strong> <a href="mailto:zezenteyi99@gmail.com" style="color: #5bc0de;">zezenteyi99@gmail.com</a></p>
+      </div>
+      <div class="download-btn">
+        <a class="btn" href="your-cv.pdf" download>📄 Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="featured-intro">
+      <p>A showcase of my recent work in AI, web development, and educational technology. Each project represents a unique challenge and learning experience.</p>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-thumbnail">
+          <img src="Images/project-ai-edu.jpg" alt="AI Educational Content Generator" />
+          <div class="project-overlay">
+            <span class="overlay-text">View Project</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>AI Educational Content Generator</h3>
+          
+          <div class="project-tags">
+            <span class="tag">AI</span>
+            <span class="tag">Web Dev</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Education</span>
+          </div>
+          
+          <div class="project-details">
+            <p><strong>Overview:</strong> An intelligent web application that helps learners generate customized quizzes and study guides using AI, streamlining the educational content creation process.</p>
+            
+            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, AI API Integration</p>
+            
+            <p><strong>Problem Statement:</strong> Students and educators spend significant time creating study materials. This tool automates quiz and study guide generation based on any topic.</p>
+            
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>AI-powered quiz generation</li>
+              <li>Custom study guide creation</li>
+              <li>Topic-based content generation</li>
+              <li>User-friendly interface</li>
+              <li>Export functionality</li>
+            </ul>
+          </div>
+          
+          <div class="project-buttons">
+            <a href="https://ai-edu-generator.vercel.app/" target="_blank" class="btn-project demo">
+              🚀 View Demo
+            </a>
+            <a href="https://github.com/ZezeNteyi99/ai-edu-generator" target="_blank" class="btn-project code">
+              💻 View Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-thumbnail">
+          <img src="Images/project-khanyi-bot.jpg" alt="Khanyi-Bot" />
+          <div class="project-overlay">
+            <span class="overlay-text">View Project</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Khanyi-Bot</h3>
+          
+          <div class="project-tags">
+            <span class="tag">AI</span>
+            <span class="tag">Chatbot</span>
+            <span class="tag">Education</span>
+            <span class="tag">Interactive</span>
+          </div>
+          
+          <div class="project-details">
+            <p><strong>Overview:</strong> An interactive chatbot designed to teach users the fundamentals of Artificial Intelligence through conversational learning and simple explanations.</p>
+            
+            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Natural Language Processing</p>
+            
+            <p><strong>Problem Statement:</strong> AI concepts can be intimidating for beginners. KhanyiBot makes learning AI accessible through interactive, bite-sized conversations.</p>
+            
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>Interactive AI conversations</li>
+              <li>Beginner-friendly explanations</li>
+              <li>Topic navigation system</li>
+              <li>Real-time responses</li>
+              <li>Progressive learning path</li>
+            </ul>
+          </div>
+          
+          <div class="project-buttons">
+            <a href="https://khanyi-bot.vercel.app/" target="_blank" class="btn-project demo">
+              🚀 View Demo
+            </a>
+            <a href="https://github.com/ZezeNteyi99/khanyi-bot" target="_blank" class="btn-project code">
+              💻 View Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-thumbnail">
+          <img src="Images/project-portfolio.jpg" alt="Portfolio Website" />
+          <div class="project-overlay">
+            <span class="overlay-text">View Project</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Portfolio Website</h3>
+          
+          <div class="project-tags">
+            <span class="tag">Web Dev</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Animations</span>
+            <span class="tag">Responsive</span>
+          </div>
+          
+          <div class="project-details">
+            <p><strong>Overview:</strong> A modern, interactive portfolio website featuring a stunning night sky animation, smooth transitions, and comprehensive project showcases.</p>
+            
+            <p><strong>Tech Stack:</strong> HTML5, CSS3, Vanilla JavaScript, Canvas API</p>
+            
+            <p><strong>Problem Statement:</strong> Creating a memorable online presence that effectively showcases skills, projects, and personality while providing excellent user experience.</p>
+            
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>Interactive night sky with shooting stars</li>
+              <li>Dark/Light theme toggle</li>
+              <li>Smooth scroll animations</li>
+              <li>Responsive design</li>
+              <li>Contact form integration</li>
+            </ul>
+          </div>
+          
+          <div class="project-buttons">
+            <a href="#about" class="btn-project demo">
+              🚀 View Demo
+            </a>
+            <a href="https://github.com/ZezeNteyi99/portfolio" target="_blank" class="btn-project code">
+              💻 View Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 - Coming Soon -->
+      <article class="project-card coming-soon">
+        <div class="project-thumbnail">
+          <div class="coming-soon-overlay">
+            <span class="coming-soon-text">🚀</span>
+            <p>More Projects Coming Soon</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Future Projects</h3>
+          
+          <div class="project-tags">
+            <span class="tag">AI</span>
+            <span class="tag">Web Dev</span>
+            <span class="tag">Analytics</span>
+          </div>
+          
+          <div class="project-details">
+            <p><strong>In Development:</strong> Currently working on exciting new projects involving advanced web development, AI integration, and innovative solutions to real-world problems.</p>
+            
+            <p><strong>Areas of Focus:</strong></p>
+            <ul>
+              <li>Machine Learning applications</li>
+              <li>Full-stack web applications</li>
+              <li>Data visualization tools</li>
+              <li>Workday analytics solutions</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section">
+    <h2>Technical Skills & Competencies</h2>
+    <div class="skills-intro">
+      <p>A comprehensive overview of my technical abilities, tools, and professional competencies developed through education and hands-on project experience.</p>
+    </div>
+    
+    <div class="skills-categories">
+      <!-- AI & Data Skills -->
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="category-icon">🤖</span>
+          <h3>AI & Data</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Machine Learning Basics</span>
+          <span class="skill-tag">Teachable Machine</span>
+          <span class="skill-tag">Workday Reporting</span>
+          <span class="skill-tag">Workday Analytics</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">AI Integration</span>
+        </div>
+        <div class="skill-progress-section">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Python</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Machine Learning</span>
+              <span>65%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend Development -->
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="category-icon">🎨</span>
+          <h3>Frontend Development</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Canvas API</span>
+          <span class="skill-tag">UI/UX Design</span>
+          <span class="skill-tag">Animations</span>
+        </div>
+        <div class="skill-progress-section">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>HTML & CSS</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>JavaScript</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend & APIs -->
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="category-icon">⚙️</span>
+          <h3>Backend & APIs</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">API Integration</span>
+          <span class="skill-tag">Node.js Basics</span>
+          <span class="skill-tag">Database Concepts</span>
+          <span class="skill-tag">Server Management</span>
+        </div>
+        <div class="skill-progress-section">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>API Integration</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Platforms -->
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="category-icon">🛠️</span>
+          <h3>Tools & Platforms</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Vercel</span>
+          <span class="skill-tag">Chrome DevTools</span>
+          <span class="skill-tag">Command Line</span>
+        </div>
+        <div class="skill-progress-section">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>GitHub & Git</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="category-icon">💡</span>
+          <h3>Soft Skills</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Teamwork</span>
+          <span class="skill-tag">Critical Thinking</span>
+          <span class="skill-tag">Adaptability</span>
+          <span class="skill-tag">Time Management</span>
+          <span class="skill-tag">Continuous Learning</span>
+        </div>
+        <div class="skill-progress-section">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Problem Solving</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section">
+    <h2>Academic Achievements</h2>
+    <div class="achievements-list">
+      <ul>
+        <li>
+          <span class="achievement-icon">🏆</span>
+          <span>AI Certifications – Coursera</span>
+        </li>
+        <li>
+          <span class="achievement-icon">🏆</span>
+          <span>CompTIA Security+ Certificate</span>
+        </li>
+        <li>
+          <span class="achievement-icon">⭐</span>
+          <span>Innovation Award – Capaciti Program</span>
+        </li>
+        <li>
+          <span class="achievement-icon">📜</span>
+          <span>Matric Certificate</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="https://formsubmit.co/zezenteyi99@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New message from Portfolio!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn submit-btn">Send Message</button>
+    </form>
+    
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/khanyisa-zezethu-nteyi-765390207/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/ZezeNteyi99" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Khanyisa Zezethu Nteyi | Built with 💻 and ☕</p>
+  </footer>
+  
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    🌙
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

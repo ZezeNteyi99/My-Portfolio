@@ -588,12 +588,15 @@ h2 {
 
 .project-card {
   background: rgba(20,20,20,0.8);
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
   transition: 0.4s;
   border: 1px solid rgba(91,192,222,0.2);
   position: relative;
   cursor: pointer;
+  width: 90%; /* Reduced width */
+height: auto; /* Let the height adjust dynamically */
+max-width: 300px; /* Limit the maximum width */
 }
 
 .project-card:hover {
@@ -608,7 +611,7 @@ h2 {
 
 .project-thumbnail {
   width: 100%;
-  height: 250px;
+  height: 200px;
   overflow: hidden;
   position: relative;
   background: linear-gradient(135deg, rgba(91,192,222,0.2), rgba(52,152,219,0.1));
@@ -680,13 +683,13 @@ h2 {
 }
 
 .project-content {
-  padding: 30px;
+  padding: 20px;
 }
 
 .project-content h3 {
   color: #5bc0de;
   margin-bottom: 15px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .project-tags {
@@ -1428,4 +1431,5 @@ body.light-mode .platform-link {
     text-align: center;
   }
 }
+
 
